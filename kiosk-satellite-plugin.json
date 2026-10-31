@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "ground-news-top-stories",
+  "name": "Ground News Top Stories",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "minAndroidSdk": 24,
+  "minAppVersion": "2026.10.45",
+  "entryClass": "kiosk.groundnews.GroundNewsPlugin",
+  "description": "A screensaver that cycles through the top stories on ground.news for your region, with each story's photo, summary, number of sources and its left, center and right coverage split. Select Top Stories (Ground News Top Stories) under Screensaver > Screensaver mode.",
+  "author": "Carl Mozo",
+  "license": "Apache-2.0",
+  "capabilities": [
+    "screensaver"
+  ],
+  "icon": "icon.png",
+  "settings": [
+    {
+      "key": "storyCount",
+      "type": "number",
+      "title": "Number of stories",
+      "default": 10,
+      "min": 3,
+      "max": 15,
+      "step": 1,
+      "group": "Stories",
+      "description": "How many top stories to cycle through, in the order the ground.news home page shows them."
+    },
+    {
+      "key": "dailyBriefing",
+      "type": "boolean",
+      "title": "Include Daily Briefing",
+      "default": false,
+      "group": "Stories",
+      "description": "Start with the stories from Ground News' Daily Briefing. The briefing is the same in every edition and is mostly US news. Off shows only your edition's top stories."
+    },
+    {
+      "key": "secondsPerStory",
+      "type": "number",
+      "title": "Time per story",
+      "default": 15,
+      "min": 5,
+      "max": 120,
+      "step": 5,
+      "unit": "s",
+      "group": "Stories",
+      "description": "How long each story stays on screen."
+    },
+    {
+      "key": "refreshMinutes",
+      "type": "number",
+      "title": "Refresh every",
+      "default": 30,
+      "min": 10,
+      "max": 240,
+      "step": 5,
+      "unit": "min",
+      "group": "Stories",
+      "description": "How often to load the latest stories from ground.news."
+    },
+    {
+      "key": "showImages",
+      "type": "boolean",
+      "title": "Show photos",
+      "default": true,
+      "group": "Appearance",
+      "description": "Download each story's photo. Turn off to save data."
+    },
+    {
+      "key": "showSummary",
+      "type": "boolean",
+      "title": "Show summary",
+      "default": true,
+      "group": "Appearance",
+      "description": "Show a short summary under each headline."
+    },
+    {
+      "key": "showBias",
+      "type": "boolean",
+      "title": "Show coverage bias",
+      "default": true,
+      "group": "Appearance",
+      "description": "Show the left, center and right split of the sources covering each story, when ground.news has one."
+    },
+    {
+      "key": "showClock",
+      "type": "boolean",
+      "title": "Show clock",
+      "default": true,
+      "group": "Appearance",
+      "description": "Show the time and date in the top right corner."
+    }
+  ],
+  "commands": [
+    {
+      "id": "refresh",
+      "title": "Refresh stories"
+    }
+  ]
+}
