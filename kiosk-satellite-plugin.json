@@ -8,7 +8,7 @@
   "minAppVersion": "2026.10.45",
   "entryClass": "kiosk.groundnews.GroundNewsPlugin",
   "description": "A screensaver that cycles through the top stories on ground.news for your region, with each story's photo, summary, number of sources and its left, center and right coverage split. Select Top Stories (Ground News Top Stories) under Screensaver > Screensaver mode.",
-  "author": "Carl Mozo",
+  "author": "MozKaboom",
   "license": "Apache-2.0",
   "capabilities": [
     "screensaver"
