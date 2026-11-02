@@ -4,6 +4,12 @@ A [Kiosk Satellite](https://kiosksatellite.com) screensaver that cycles through 
 
 This plugin is not affiliated with, endorsed by or sponsored by Ground News. It reads the public ground.news home page the same way a browser does.
 
+## Screenshots
+
+![A landscape screen showing a Ground News top story with its photo, summary and a left, center and right coverage bar](https://raw.githubusercontent.com/MozKaboom/ground-news-screensaver/main/docs/screenshots/landscape.jpg)
+
+![A portrait screen showing a Ground News top story with its photo, summary and a left, center and right coverage bar](https://raw.githubusercontent.com/MozKaboom/ground-news-screensaver/main/docs/screenshots/portrait.jpg)
+
 ## Installation
 
 ### Community Plugins (Recommended)
